@@ -1,1 +1,5 @@
 .idea/
+ems.db
+__pycache__/
+models/__pycache__/
+random/
