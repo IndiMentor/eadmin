@@ -9,6 +9,7 @@ Beginnings of an admin interface for ems
 3. config management could use a class with public vars - user config file is just python assignments 
    config option just imports module.
 4. Start establishing scaffolding for website instead of redirect to admin
+3. Make image relative path = site name
 3. M:M with location
     intersection table
     Foreign keys
@@ -23,6 +24,7 @@ Beginnings of an admin interface for ems
 4. Image types array + processing
     Profile Photo Field Add
     Portfolio Table Add
+    calls to image alchemy & pillow
     ImageTypes Table/class
         original
         indi-landscape
@@ -33,7 +35,7 @@ Beginnings of an admin interface for ems
 9. Checkboxes smaller & 1/2 Sized Text Fields
 9. Rate Hierarchy idea is not part of MVP
 9. Refactor reviews code into product
-    calls to image alchemy & pillow
+    
     
 ## To done
 

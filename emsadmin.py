@@ -2,9 +2,10 @@
 from flask import Flask, redirect
 import logging
 from peewee import SqliteDatabase
-# from util.rate import Rate
 from flask_basicauth import BasicAuth
-from userface import home_page
+from init_admin import init_admin
+
+import flask_admin
 
 logging.basicConfig()
 logging.getLogger().setLevel(logging.DEBUG)
@@ -29,6 +30,5 @@ def index():
     return '<a href="/admin/">Click me to get to Admin!</a>'
 
 if __name__ == '__main__':
-    from models import init_admin
     init_admin(ems_admin_app, db=db)
     ems_admin_app.run(debug=False)
